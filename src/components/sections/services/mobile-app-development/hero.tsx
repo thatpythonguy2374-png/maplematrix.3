@@ -26,17 +26,17 @@ const Hero = () => {
           <StaggerContainer>
             <AnimateOnView blur>
               <h1 className="h1 text-[#F5F1ED] mb-5">
-                We Build Websites That Move Businesses{" "}
-                <span className="text-gradient"> Forward.</span>
+                Let's Turn Your Ideas Into Powerful Mobile{" "}
+                <span className="text-gradient"> Experiences.</span>
               </h1>
             </AnimateOnView>
 
             <AnimateOnView blur delay={0.2}>
               <p className="text-body-md text-[#E3DAD2] max-w-2xl mx-auto mb-5">
-                Your website is more than just an online presence. It's where
-                people discover your brand, explore your services, and decide to
-                work with you. We build digital experiences that make every
-                interaction count.
+                We build, design and develop Android, iOS and cross platform
+                mobile applications that delivers seamless user experience. You
+                will get a complete working application with design by your
+                approval.
               </p>
             </AnimateOnView>
           </StaggerContainer>

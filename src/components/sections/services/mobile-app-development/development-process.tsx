@@ -15,7 +15,7 @@ const steps = [
     number: "01",
     title: "Discovery & Planning",
     description:
-      "We start by understanding your business, audience, goals, and requirements. Together, we define the project scope and create a clear development roadmap.",
+      "We understand the scope of the application first, then we plan which features can go with the launch and which can wait for the next versions.",
     icon: Lightbulb,
     duration: "Understand",
   },
@@ -23,7 +23,7 @@ const steps = [
     number: "02",
     title: "UI/UX Design",
     description:
-      "We shape your ideas into thoughtful layouts and user journeys, creating a visual direction that reflects your brand and makes navigation effortless.",
+      "We design a clickable prototype which you can use on your own smartphone, if satisfied then the development starts. ",
     icon: Palette,
     duration: "Visualize",
   },
@@ -31,7 +31,7 @@ const steps = [
     number: "03",
     title: "Development",
     description:
-      "Once the design is approved, we bring it to life with clean, scalable code and the right technologies for your website or application.",
+      "We build the app for you along with complete backend and admin panel requirenments. Along with the features requested by you.",
     icon: Code2,
     duration: "Build",
   },
@@ -39,7 +39,7 @@ const steps = [
     number: "04",
     title: "Testing & Optimization",
     description:
-      "We test across devices and browsers, check functionality, and optimize performance to ensure everything works as expected.",
+      "We test the app on the Android and iOS devices to fix bugs and to check performance. If it lacks somewhere we optimize it for you.",
     icon: TestTube2,
     duration: "Refine",
   },
@@ -47,7 +47,7 @@ const steps = [
     number: "05",
     title: "Launch & Support",
     description:
-      "After final approval, we deploy your website and help you take the next step with a reliable digital presence.",
+      "We prepare the store listings, submit the app and wait for approval, also we keep in touch with you provide support to fix bugs and performance for few weeks.",
     icon: Rocket,
     duration: "Go live",
   },

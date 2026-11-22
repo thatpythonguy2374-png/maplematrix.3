@@ -28,7 +28,7 @@ import StarterPricing from "./pages/pricing/starter";
 import SignupPage from "./pages/signup";
 import ECommerce from "./pages/services/e-commerce";
 import SEO from "./pages/services/seo";
-import UIUXDesign from "./pages/services/ui-ux-design";
+import MobileApp from "./pages/services/mobile-app-development";
 import WebApplications from "./pages/services/web-applications";
 import WebsiteDevelopment from "./pages/services/website-development";
 import WebsiteMaintain from "./pages/services/website-maintain";
@@ -82,7 +82,10 @@ const App = () => (
               />
               <Route path="/services/e-commerce" element={<ECommerce />} />
               <Route path="/services/seo" element={<SEO />} />
-              <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
+              <Route
+                path="/services/mobile-app-development"
+                element={<MobileApp />}
+              />
               <Route
                 path="/services/web-applications"
                 element={<WebApplications />}

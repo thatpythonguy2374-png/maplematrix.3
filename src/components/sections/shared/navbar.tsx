@@ -53,8 +53,8 @@ const servicePages = [
     href: "/services/seo",
   },
   {
-    name: "UI/UX Design",
-    href: "/services/ui-ux-design",
+    name: "Mobile App Development",
+    href: "/services/mobile-app-development",
   },
   {
     name: "Web Applications",

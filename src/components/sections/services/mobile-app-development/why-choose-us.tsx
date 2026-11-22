@@ -14,25 +14,19 @@ const benefits = [
     icon: Sparkles,
     title: "Designed Around Your Brand",
     description:
-      "Your business is unique, and your website should be too. We create custom experiences that reflect your identity and connect with your audience.",
+      "Your business is unique, and your application should be too. We create custom experiences that reflect your identity and connect with your audience.",
   },
   {
     icon: Smartphone,
-    title: "Responsive on Every Screen",
+    title: "Prototype",
     description:
-      "From smartphones to large desktop displays, your website will adapt beautifully to every screen size.",
+      "Before development we provide written scope and clickable prototype, to showcase what you are paying for. After approval the development starts.",
   },
   {
     icon: Gauge,
-    title: "Performance That Matters",
+    title: "Monitoring with admin panel",
     description:
-      "We focus on clean code, optimized assets, and efficient development to deliver smooth and reliable experiences.",
-  },
-  {
-    icon: Layers3,
-    title: "Built to Grow With You",
-    description:
-      "We build flexible digital foundations that can evolve as your business expands and your requirements change.",
+      "We develop the application along with the admin panel so that your team can monitor the activities from the application.",
   },
 ];
 
@@ -79,16 +73,12 @@ const WhyChooseUs = () => {
                 </h3>
 
                 <p className="mb-8 leading-relaxed text-[#B8AAA0]">
-                  We don't just put together pages and call it a website. We
-                  think about your visitors, your business goals, and the
-                  experience you want people to remember. Every design and
-                  development decision has a reason.
+                  We don't just build apps and call that mobile application. We
+                  think about your users, your business goals and the experience
+                  you want them to have on every screen. Each design and
+                  development decision is taken to build an app that feels
+                  intuitive, performs smoothly and delivers real value.
                 </p>
-
-                <div className="flex items-center gap-2 text-sm text-[#C9A283]">
-                  Thoughtful design. Meaningful results.
-                  <ArrowUpRight className="h-4 w-4" />
-                </div>
               </div>
 
               <div className="absolute bottom-8 right-8 hidden opacity-20 md:block">

@@ -40,22 +40,22 @@ const Features = () => {
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle className="mb-5">
-              Business Websites
+              Android Application Development
             </FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
-              Give your business a professional online presence with a website
-              that communicates your brand, builds trust, and brings in new
-              opportunities.
+              Apps developed for the devices people use everyday in India, with
+              smooth performance across different screen sizes and budget
+              smartphones.
             </FeatureCardDescription>
             <FeatureCardBenefits>
               <FeatureCardBenefitItem>
-                Monitor the client patterns effortlessly.
+                Lightweight apps that can run smoothly on every smartphone.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Generate detailed reports for informed decision-making.
+                Secured integratons and reliable updates
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Receive actionable alerts to stay ahead of competitors.
+                Optimised for different screen sizes.
               </FeatureCardBenefitItem>
             </FeatureCardBenefits>
             <FeatureCardAction>
@@ -77,20 +77,20 @@ const Features = () => {
             src="/images/feature/feature-alt-2.png"
             alt="Person making payment transfer"></FeatureCardImage>
           <FeatureCardContent>
-            <FeatureCardTitle>E-commerce Websites</FeatureCardTitle>
+            <FeatureCardTitle>iOS Application Development</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
-              Sell online with beautifully designed stores, seamless checkout
-              experiences, secure payments, and easy product management.
+              Apps specifically designed and developed for Apple EcoSystem.
             </FeatureCardDescription>
             <FeatureCardBenefits>
               <FeatureCardBenefitItem>
-                Seamless shopping experience across all devices.
+                Seamless integration across iPhone, iPad and other Apple
+                devices.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Secure payment gateways and smooth checkout.
+                Interfaces built around Apple's design guidelines.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Easy product, inventory, and order management.
+                High performance apps optimised for iOS ecosystem.
               </FeatureCardBenefitItem>
             </FeatureCardBenefits>
             <FeatureCardAction>
@@ -106,11 +106,11 @@ const Features = () => {
           imagePosition="right"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
-            <FeatureCardTitle>Landing pages</FeatureCardTitle>
+            <FeatureCardTitle>Cross Platform Applications</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
-              A single focused page for Google Ads, Meta Ads or a product
-              launch. It loads fast, has one clear action, and tracks every form
-              fill and call.
+              Applications contains one codebase but runs on both Android and
+              iOS devices. Works well for most business applications, costs less
+              as compared to two separate apps.
             </FeatureCardDescription>
             <FeatureCardBenefits>
               <FeatureCardBenefitItem>

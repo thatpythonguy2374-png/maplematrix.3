@@ -15,41 +15,33 @@ const steps = [
     number: "01",
     title: "Discovery & Planning",
     description:
-      "We start by understanding your business, audience, goals, and requirements. Together, we define the project scope and create a clear development roadmap.",
+      "We perform some check on your site with Google Search Console data, light house scores and compare it with the competitors, then create a plan to overcome the issues. ",
     icon: Lightbulb,
     duration: "Understand",
   },
   {
     number: "02",
-    title: "UI/UX Design",
+    title: "Keywords and Meta Data",
     description:
-      "We shape your ideas into thoughtful layouts and user journeys, creating a visual direction that reflects your brand and makes navigation effortless.",
+      "We identify the on-going high ranked keywords and page meta data that can be used in your site to increase the visiblity in Google Search.",
     icon: Palette,
     duration: "Visualize",
   },
   {
     number: "03",
-    title: "Development",
+    title: "Fixes",
     description:
-      "Once the design is approved, we bring it to life with clean, scalable code and the right technologies for your website or application.",
+      "We fix the page loading, unstructured data, page duplicacy and crawling errors so search engine crawlers can actually read and then index pages accordingly.",
     icon: Code2,
     duration: "Build",
   },
   {
     number: "04",
-    title: "Testing & Optimization",
+    title: "Content Optimization",
     description:
-      "We test across devices and browsers, check functionality, and optimize performance to ensure everything works as expected.",
+      "We build the content for your site page by page, which will lead to better content crawling to attain better page ranking.",
     icon: TestTube2,
     duration: "Refine",
-  },
-  {
-    number: "05",
-    title: "Launch & Support",
-    description:
-      "After final approval, we deploy your website and help you take the next step with a reliable digital presence.",
-    icon: Rocket,
-    duration: "Go live",
   },
 ];
 

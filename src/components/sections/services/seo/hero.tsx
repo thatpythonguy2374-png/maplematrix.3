@@ -26,17 +26,16 @@ const Hero = () => {
           <StaggerContainer>
             <AnimateOnView blur>
               <h1 className="h1 text-[#F5F1ED] mb-5">
-                We Build Websites That Move Businesses{" "}
-                <span className="text-gradient"> Forward.</span>
+                Get found on <span className="text-gradient"> Google.</span>
               </h1>
             </AnimateOnView>
 
             <AnimateOnView blur delay={0.2}>
               <p className="text-body-md text-[#E3DAD2] max-w-2xl mx-auto mb-5">
-                Your website is more than just an online presence. It's where
-                people discover your brand, explore your services, and decide to
-                work with you. We build digital experiences that make every
-                interaction count.
+                A great website is just the starting point. Our SEO services
+                help your business rank higher on Google, reach people who are
+                achtively seaching for what you offer, and turn that organic
+                traffic into real enquiries and customers.
               </p>
             </AnimateOnView>
           </StaggerContainer>

@@ -39,23 +39,20 @@ const Features = () => {
           imagePosition="right"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
-            <FeatureCardTitle className="mb-5">
-              Business Websites
-            </FeatureCardTitle>
+            <FeatureCardTitle className="mb-5">SEO Audit</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
-              Give your business a professional online presence with a website
-              that communicates your brand, builds trust, and brings in new
-              opportunities.
+              A full thorough checkup of your site which covers Technical SEO,
+              On-Page SEO, Off-Page SEO.
             </FeatureCardDescription>
             <FeatureCardBenefits>
               <FeatureCardBenefitItem>
-                Monitor the client patterns effortlessly.
+                Monitoring the Core Web Vitals.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Generate detailed reports for informed decision-making.
+                Uncovers the issues preventing Google from crawling your site.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Receive actionable alerts to stay ahead of competitors.
+                Regular SEO Audits helps to spot the outdates practises.
               </FeatureCardBenefitItem>
             </FeatureCardBenefits>
             <FeatureCardAction>
@@ -77,20 +74,22 @@ const Features = () => {
             src="/images/feature/feature-alt-2.png"
             alt="Person making payment transfer"></FeatureCardImage>
           <FeatureCardContent>
-            <FeatureCardTitle>E-commerce Websites</FeatureCardTitle>
+            <FeatureCardTitle>E-commerce SEO</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
-              Sell online with beautifully designed stores, seamless checkout
-              experiences, secure payments, and easy product management.
+              We optimize the category and product pages of your e-commerce
+              store, so that without paying for ads to a marketing company you
+              can get free high-intent shoppers.
             </FeatureCardDescription>
             <FeatureCardBenefits>
               <FeatureCardBenefitItem>
-                Seamless shopping experience across all devices.
+                Helps bring down the marketing cost.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Secure payment gateways and smooth checkout.
+                Visibility of your products will increase automatically.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Easy product, inventory, and order management.
+                Clean product data and schema help AI tools to recommend your
+                products.
               </FeatureCardBenefitItem>
             </FeatureCardBenefits>
             <FeatureCardAction>
@@ -106,21 +105,20 @@ const Features = () => {
           imagePosition="right"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
-            <FeatureCardTitle>Landing pages</FeatureCardTitle>
+            <FeatureCardTitle>AI search optimization</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
-              A single focused page for Google Ads, Meta Ads or a product
-              launch. It loads fast, has one clear action, and tracks every form
-              fill and call.
+              Structuring your brand in ChatGPT, Claude, Gemini, Perplexity and
+              Google AI Overviews while answering user questions.
             </FeatureCardDescription>
             <FeatureCardBenefits>
               <FeatureCardBenefitItem>
-                Conversion-focused layouts with clear calls to action.
+                Already trust the suggestions once AI recommends your brand.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Fast-loading, mobile-friendly pages built for campaigns.
+                It acts as an word of mouth.
               </FeatureCardBenefitItem>
               <FeatureCardBenefitItem>
-                Form and call tracking to measure campaign performance.
+                Brings more potential customers as visitors.
               </FeatureCardBenefitItem>
             </FeatureCardBenefits>
             <FeatureCardAction>

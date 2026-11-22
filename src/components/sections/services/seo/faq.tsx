@@ -10,54 +10,40 @@ import { Minus, Plus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What types of websites do you develop?",
+    question: "How much does SEO cost in India?",
     answer:
-      "We build a wide range of websites, including business and corporate sites, portfolio websites, landing pages, e-commerce stores, and custom web platforms. Whatever your goal, we shape the website around your business and your audience.",
+      "Costing usually depends on the size of your project and for how many locations or services you want to rank, but first we audit your site then quote a montly plan which suits for you.",
   },
   {
-    question: "Do you build custom websites or use pre-made templates?",
+    question: "How much time does SEO takes to reflect improvements?",
     answer:
-      "Every website we build is custom-designed and developed around your brand. We don't rely on ready-made templates, so your website looks unique, performs better, and can grow along with your business.",
+      "The noticeable improvements may take upto 03 to 06 months in organic traffic. Where as for new projects it can go upto 06 to 12 months, because it also depends on the age of your site and how much fixing does it needs.",
   },
   {
-    question: "Which technologies do you use for website development?",
+    question: "Can someone guarantee number one ranking? ",
     answer:
-      "We use modern, reliable technologies such as React, Next.js, Node.js, and Tailwind CSS, along with the right CMS or backend for your needs. We choose the stack based on your project's requirements, so your website is fast, secure, and easy to maintain.",
+      "It is something we call it too good to be true, because honestly no one can guarantee a 01 ranking on Google or any other search engine. ",
   },
   {
-    question: "Will my website be mobile-friendly and responsive?",
+    question: "Local SEO works as normal SEO?",
     answer:
-      "Absolutely. Every website we build is fully responsive and tested across phones, tablets, laptops, and desktops, so your visitors get a smooth experience on any screen size.",
+      "We can say that local SEO works on same core principles as normal SEO but it is used to improve ranking in terms of geograpically nearby searches, while normal SEO aims to rank nationally or globally depending on the business size.",
   },
   {
-    question: "Do you build SEO-friendly and fast-loading websites?",
+    question: "What information does SEO reports have?",
     answer:
-      "Yes. We follow SEO best practices from the start, including clean code, proper page structure, optimized images, and fast load times. This gives your website a strong foundation to rank well and keep visitors engaged.",
+      "We generated SEO reports monthly with information that contains core web vitals, page loading speed, top landing pages and AI referral traffic",
   },
   {
-    question: "Can you redesign or improve my existing website?",
+    question: "For how long should I keep SEO services?",
     answer:
-      "Of course. If your current website looks outdated, loads slowly, or isn't bringing results, we can redesign it, improve its performance, or add new features without starting from scratch where it isn't needed.",
+      "SEO takes time, we usually suggest to keep it going for few months. Before that first understand the terms and conditions of the following agency.",
   },
   {
-    question: "How long does it take to develop a website?",
+    question:
+      "Is it possible to get my business appear in ChatGPT and Google AI answers?",
     answer:
-      "It depends on the size and complexity of the project. A simple business website usually takes 2-4 weeks, while larger websites with custom features or e-commerce can take 6-12 weeks. After understanding your requirements, we'll share a clear timeline.",
-  },
-  {
-    question: "Will I be able to update the website content myself?",
-    answer:
-      "Yes. We can integrate a content management system or admin panel so you can easily update text, images, blogs, and products on your own, without needing any technical knowledge.",
-  },
-  {
-    question: "Do you provide support after the website is launched?",
-    answer:
-      "Yes, we do. We offer post-launch support for bug fixes, updates, security, and performance improvements. We're also available if you want to add new features or scale your website later.",
-  },
-  {
-    question: "How can I get started with my website project?",
-    answer:
-      "Just get in touch with us and share a little about your business and what you're looking to build. We'll discuss your goals, understand your requirements, and guide you through the next steps with a clear plan and quote.",
+      "Yes, It is possible to get featured in AI responses. It can be achieved by allowing AI crawlers, adding structured data, mainting strong taditional SEO and by building genuine Google Business Profile.",
   },
 ];
 

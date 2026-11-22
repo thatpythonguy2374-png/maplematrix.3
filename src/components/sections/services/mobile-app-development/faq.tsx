@@ -10,54 +10,34 @@ import { Minus, Plus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What types of websites do you develop?",
+    question: "How much does it cost to develop mobile app in India?",
     answer:
-      "We build a wide range of websites, including business and corporate sites, portfolio websites, landing pages, e-commerce stores, and custom web platforms. Whatever your goal, we shape the website around your business and your audience.",
+      "The price depends on the platforms, the feature required in the app. A simple content app costs way more less compared to a feature packed app. ",
   },
   {
-    question: "Do you build custom websites or use pre-made templates?",
+    question: "How much time does it take to build a mobile application?",
     answer:
-      "Every website we build is custom-designed and developed around your brand. We don't rely on ready-made templates, so your website looks unique, performs better, and can grow along with your business.",
+      "It completely depends on the scope of application also how quickly we get approval on our designs by you. Along count few more days extra because of the review of Play Store and App Store, also App Store's review can be stricter ",
   },
   {
-    question: "Which technologies do you use for website development?",
+    question: "How can I choose the platform?",
     answer:
-      "We use modern, reliable technologies such as React, Next.js, Node.js, and Tailwind CSS, along with the right CMS or backend for your needs. We choose the stack based on your project's requirements, so your website is fast, secure, and easy to maintain.",
+      "First know your audience. If you have more potential Android user or iOS user, according to StatCounter (Oct 2025 – Oct 2026), Android holds about 94.85% of India's mobile operating system market share, compared to 5.1% for iOS, usually businesses go for cross platform applications for one codebase.",
   },
   {
-    question: "Will my website be mobile-friendly and responsive?",
+    question: "Which is better Cross-platform or native?",
     answer:
-      "Absolutely. Every website we build is fully responsive and tested across phones, tablets, laptops, and desktops, so your visitors get a smooth experience on any screen size.",
+      "Neither is universally better. It depends on you requirement which suits you better Cross-platform comes handy with tighter budget and limited timeline, whereas Native comes handy where deep hardware usage and maximum performance is required",
   },
   {
-    question: "Do you build SEO-friendly and fast-loading websites?",
+    question: "Do I have to pay to Play Store and App Store?",
     answer:
-      "Yes. We follow SEO best practices from the start, including clean code, proper page structure, optimized images, and fast load times. This gives your website a strong foundation to rank well and keep visitors engaged.",
+      "Yes, both store charge a developer account registration fee separately. Play Store charges 2,100 Rupees + 18% GST which is a one time payment, whereas App Store charges 8,700 Rupees yearly. ",
   },
   {
-    question: "Can you redesign or improve my existing website?",
+    question: "Can you add features and improve my existing application?",
     answer:
-      "Of course. If your current website looks outdated, loads slowly, or isn't bringing results, we can redesign it, improve its performance, or add new features without starting from scratch where it isn't needed.",
-  },
-  {
-    question: "How long does it take to develop a website?",
-    answer:
-      "It depends on the size and complexity of the project. A simple business website usually takes 2-4 weeks, while larger websites with custom features or e-commerce can take 6-12 weeks. After understanding your requirements, we'll share a clear timeline.",
-  },
-  {
-    question: "Will I be able to update the website content myself?",
-    answer:
-      "Yes. We can integrate a content management system or admin panel so you can easily update text, images, blogs, and products on your own, without needing any technical knowledge.",
-  },
-  {
-    question: "Do you provide support after the website is launched?",
-    answer:
-      "Yes, we do. We offer post-launch support for bug fixes, updates, security, and performance improvements. We're also available if you want to add new features or scale your website later.",
-  },
-  {
-    question: "How can I get started with my website project?",
-    answer:
-      "Just get in touch with us and share a little about your business and what you're looking to build. We'll discuss your goals, understand your requirements, and guide you through the next steps with a clear plan and quote.",
+      "Yes, But first we will review everything about your application to check what is worth keeping then we will give you the idea how we will going to fix or rebuild your application. ",
   },
 ];
 
@@ -89,12 +69,14 @@ const FAQ = () => {
                 type="single"
                 collapsible
                 defaultValue="item-0"
-                className="w-full">
+                className="w-full"
+              >
                 {faqs.map((faq, index) => (
                   <AccordionItem
                     key={index}
                     value={`item-${index}`}
-                    className="border-b border-border/40 px-0">
+                    className="border-b border-border/40 px-0"
+                  >
                     <AccordionTrigger className="group text-left py-6 hover:no-underline [&>svg]:hidden">
                       <span className="h4 pr-8">{faq.question}</span>
 

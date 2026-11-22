@@ -11,7 +11,8 @@ const Hero = () => {
         pb-16 md:pb-24
         bg-[url('/images/home/hero-bg.webp')]
         bg-cover bg-center bg-no-repeat
-      ">
+      "
+    >
       {/* Warm charcoal overlay */}
       <div className="absolute inset-0 bg-[#171412]/45 pointer-events-none" />
 
@@ -26,7 +27,8 @@ const Hero = () => {
           <StaggerContainer>
             <AnimateOnView blur>
               <h1 className="h1 text-[#F5F1ED] mb-5">
-                Web Designs That Speak For Your Brand
+                Web Designs That Speak For Your{" "}
+                <span className="text-gradient"> Brand.</span>
               </h1>
             </AnimateOnView>
 

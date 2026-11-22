@@ -28,8 +28,9 @@ const Features = () => {
               <span className="text-gradient">One Digital Partner.</span>
             </h2>
             <p className="text-[#F5F1ED] text-body-md">
-              Every business has a different story to tell. We build websites
-              and digital platforms that bring those stories to life.
+              Every online store has a potential to grow. We create e-commerce
+              experiences that make you customer's shopping effortless along
+              with it you can also keep track of your customer's requirements.
             </p>
           </div>
         </AnimateOnView>
@@ -37,7 +38,8 @@ const Features = () => {
         {/* Card 1: Intelligent Financial Insights */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardContent>
             <FeatureCardTitle className="mb-5">
               Custom e-commerce development
@@ -66,16 +68,19 @@ const Features = () => {
           </FeatureCardContent>
           <FeatureCardImage
             src="/images/feature/feature-alt-1.png"
-            alt="Man using smartphone for financial analytics"></FeatureCardImage>
+            alt="Man using smartphone for financial analytics"
+          ></FeatureCardImage>
         </FeatureCard>
 
         {/* Card 2: Effortless Payments And Transfers */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardImage
             src="/images/feature/feature-alt-2.png"
-            alt="Person making payment transfer"></FeatureCardImage>
+            alt="Person making payment transfer"
+          ></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>
               Payment gateway and checkout set-up
@@ -107,7 +112,8 @@ const Features = () => {
         {/* Card 3: Flexible Business Solutions */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardContent>
             <FeatureCardTitle>Shipping and order management</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -134,12 +140,14 @@ const Features = () => {
           </FeatureCardContent>
           <FeatureCardImage
             src="/images/feature/feature-alt-3.png"
-            alt="Business meeting and investment growth"></FeatureCardImage>
+            alt="Business meeting and investment growth"
+          ></FeatureCardImage>
         </FeatureCard>
         {/* Card 4: Product upload and catalogue set-up */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardImage
             src="/images/feature/crm-development.png"
             alt="CRM dashboard showing customer and sales management"
@@ -177,7 +185,8 @@ const Features = () => {
         {/* Card 5: Website Redesign & Migration */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardContent>
             <FeatureCardTitle>E-commerce SEO and migration</FeatureCardTitle>
 

@@ -28,8 +28,9 @@ const Features = () => {
               <span className="text-gradient">One Digital Partner.</span>
             </h2>
             <p className="text-[#F5F1ED] text-body-md">
-              Every business has a different story to tell. We build websites
-              and digital platforms that bring those stories to life.
+              Every business deserves to be discovered. We combine SEO
+              strategies that improve your search visiblility on Google or on
+              other seach engines.
             </p>
           </div>
         </AnimateOnView>
@@ -37,7 +38,8 @@ const Features = () => {
         {/* Card 1: Intelligent Financial Insights */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardContent>
             <FeatureCardTitle className="mb-5">SEO Audit</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -63,16 +65,19 @@ const Features = () => {
           </FeatureCardContent>
           <FeatureCardImage
             src="/images/feature/feature-alt-1.png"
-            alt="Man using smartphone for financial analytics"></FeatureCardImage>
+            alt="Man using smartphone for financial analytics"
+          ></FeatureCardImage>
         </FeatureCard>
 
         {/* Card 2: Effortless Payments And Transfers */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardImage
             src="/images/feature/feature-alt-2.png"
-            alt="Person making payment transfer"></FeatureCardImage>
+            alt="Person making payment transfer"
+          ></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>E-commerce SEO</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -103,7 +108,8 @@ const Features = () => {
         {/* Card 3: Flexible Business Solutions */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
+        >
           <FeatureCardContent>
             <FeatureCardTitle>AI search optimization</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -129,7 +135,8 @@ const Features = () => {
           </FeatureCardContent>
           <FeatureCardImage
             src="/images/feature/feature-alt-3.png"
-            alt="Business meeting and investment growth"></FeatureCardImage>
+            alt="Business meeting and investment growth"
+          ></FeatureCardImage>
         </FeatureCard>
       </Container>
     </section>

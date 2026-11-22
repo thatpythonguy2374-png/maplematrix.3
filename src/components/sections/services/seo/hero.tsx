@@ -11,7 +11,8 @@ const Hero = () => {
         pb-16 md:pb-24
         bg-[url('/images/home/hero-bg.webp')]
         bg-cover bg-center bg-no-repeat
-      ">
+      "
+    >
       {/* Warm charcoal overlay */}
       <div className="absolute inset-0 bg-[#171412]/45 pointer-events-none" />
 
@@ -34,7 +35,7 @@ const Hero = () => {
               <p className="text-body-md text-[#E3DAD2] max-w-2xl mx-auto mb-5">
                 A great website is just the starting point. Our SEO services
                 help your business rank higher on Google, reach people who are
-                achtively seaching for what you offer, and turn that organic
+                actively seaching for what you offer, and turn that organic
                 traffic into real enquiries and customers.
               </p>
             </AnimateOnView>
@@ -81,11 +82,13 @@ const Hero = () => {
 
                       form.reset();
                     }}
-                    className="space-y-5">
+                    className="space-y-5"
+                  >
                     <div>
                       <label
                         htmlFor="name"
-                        className="mb-2 block text-sm font-medium text-[#F5F1ED]">
+                        className="mb-2 block text-sm font-medium text-[#F5F1ED]"
+                      >
                         Full Name
                       </label>
                       <input
@@ -101,7 +104,8 @@ const Hero = () => {
                     <div>
                       <label
                         htmlFor="phone"
-                        className="mb-2 block text-sm font-medium text-[#F5F1ED]">
+                        className="mb-2 block text-sm font-medium text-[#F5F1ED]"
+                      >
                         Phone Number
                       </label>
                       <input
@@ -118,7 +122,8 @@ const Hero = () => {
                     <div>
                       <label
                         htmlFor="service"
-                        className="mb-2 block text-sm font-medium text-[#F5F1ED]">
+                        className="mb-2 block text-sm font-medium text-[#F5F1ED]"
+                      >
                         Type of Service
                       </label>
                       <select
@@ -126,7 +131,8 @@ const Hero = () => {
                         name="service"
                         required
                         defaultValue=""
-                        className="w-full appearance-none rounded-xl border border-[#493B30] bg-[#0E0D0C]/80 px-4 py-3 text-sm text-[#B8AAA0] outline-none transition focus:border-[#C9A283] focus:ring-2 focus:ring-[#C9A283]/15">
+                        className="w-full appearance-none rounded-xl border border-[#493B30] bg-[#0E0D0C]/80 px-4 py-3 text-sm text-[#B8AAA0] outline-none transition focus:border-[#C9A283] focus:ring-2 focus:ring-[#C9A283]/15"
+                      >
                         <option value="" disabled>
                           Select a service
                         </option>
@@ -150,7 +156,8 @@ const Hero = () => {
 
                     <button
                       type="submit"
-                      className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#C9A283] to-[#8F6B52] px-6 py-3.5 text-sm font-semibold text-[#17110D] shadow-lg shadow-[#8F6B52]/15 transition hover:-translate-y-0.5 hover:shadow-[#8F6B52]/30">
+                      className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#C9A283] to-[#8F6B52] px-6 py-3.5 text-sm font-semibold text-[#17110D] shadow-lg shadow-[#8F6B52]/15 transition hover:-translate-y-0.5 hover:shadow-[#8F6B52]/30"
+                    >
                       Get a Free Consultation
                       <span className="transition-transform group-hover:translate-x-1">
                         →

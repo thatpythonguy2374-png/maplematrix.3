@@ -28,16 +28,6 @@ import {
 import { useAuth } from "@/hooks/use-auth";
 import { Link } from "react-router-dom";
 
-// Main navigation links
-const mainPages = [
-  { name: "About", href: "/about" },
-  { name: "Feature", href: "/feature" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Blogs", href: "/blog" },
-  { name: "Contact", href: "/contact" },
-  { name: "Integration", href: "/integration" },
-];
-
 // Maple Matrix Services
 const servicePages = [
   {
@@ -109,7 +99,7 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation (same items as desktop: About, Services, Contact / User) */}
         <div className="flex items-center gap-2 lg:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -139,33 +129,25 @@ const Navbar = () => {
                 </SheetPrimitive.Close>
               </SheetHeader>
 
-              <div className="px-2 py-6 flex flex-col gap-7">
-                {/* Main Navigation */}
-                <div className="space-y-3">
-                  <p className="text-white/40 text-xs uppercase tracking-widest">
-                    Navigation
-                  </p>
+              <div className="px-2 py-6 flex flex-col gap-2">
+                {/* About */}
+                <Link
+                  to="/about"
+                  onClick={closeMobileMenu}
+                  className="block py-3 text-lg text-white hover:text-primary transition-colors">
+                  About
+                </Link>
 
-                  {mainPages.map((page) => (
-                    <Link
-                      key={page.href}
-                      to={page.href}
-                      onClick={closeMobileMenu}
-                      className="block py-1 text-muted-foreground hover:text-white transition-colors">
-                      {page.name}
-                    </Link>
-                  ))}
-                </div>
-
-                {/* Services Navigation */}
-                <div className="space-y-3">
+                {/* Services (expandable, same as the desktop dropdown) */}
+                <div>
                   <button
                     type="button"
+                    aria-expanded={mobileServicesOpen}
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                    className="flex items-center justify-between w-full text-white uppercase text-xs tracking-widest">
+                    className="flex items-center justify-between w-full py-3 text-lg text-white hover:text-primary transition-colors">
                     Services
                     <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-300 ${
+                      className={`w-5 h-5 transition-transform duration-300 ${
                         mobileServicesOpen ? "rotate-180" : ""
                       }`}
                     />
@@ -178,13 +160,14 @@ const Navbar = () => {
                         : "grid-rows-[0fr] opacity-0"
                     }`}>
                     <div className="overflow-hidden">
-                      <div className="pl-3 border-l border-white/10 space-y-3 pt-2">
+                      <div className="ml-1 pl-3 border-l border-white/10 space-y-1 pb-2">
                         {servicePages.map((service) => (
                           <Link
                             key={service.href}
                             to={service.href}
                             onClick={closeMobileMenu}
-                            className="block py-1 text-muted-foreground hover:text-white transition-colors">
+                            tabIndex={mobileServicesOpen ? 0 : -1}
+                            className="block rounded-md px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-white">
                             {service.name}
                           </Link>
                         ))}
@@ -193,12 +176,19 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                {/* Mobile Contact Button */}
-                <Button asChild className="w-full rounded-full">
-                  <Link to="/contact" onClick={closeMobileMenu}>
-                    Contact Us
-                  </Link>
-                </Button>
+                {/* Contact Us / User Menu (same logic as desktop) */}
+                <div className="pt-5 mt-3 border-t border-white/10">
+                  {!loading &&
+                    (user ? (
+                      <UserMenu />
+                    ) : (
+                      <Button asChild className="w-full rounded-full">
+                        <Link to="/contact" onClick={closeMobileMenu}>
+                          Contact Us
+                        </Link>
+                      </Button>
+                    ))}
+                </div>
               </div>
             </SheetContent>
           </Sheet>

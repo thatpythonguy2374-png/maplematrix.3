@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AnimateOnView } from "@/components/ui/motion/animate-on-view";
 import { StaggerContainer } from "@/components/ui/motion/stagger";
-import { getDriveImageUrl } from "@/lib/drive";
 
 const Hero = () => {
   const iPhone =
@@ -18,7 +17,8 @@ const Hero = () => {
         pb-0
         bg-[url('/images/home/hero-bg.webp')]
         bg-cover bg-center bg-no-repeat
-      ">
+      "
+    >
       {/* Warm charcoal overlay */}
       <div className="absolute inset-0 bg-[#171412]/45 pointer-events-none" />
 

@@ -11,13 +11,20 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
+import { sendContactEmail } from "@/lib/send-contact-email";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+// Accepts Indian and international formats, e.g. 9876543210, +91 98765 43210, +44 20 7946 0958
+const isValidPhone = (val: string) => {
+  const digits = val.replace(/\D/g, "");
+  return (
+    /^\+?[0-9\s\-().]+$/.test(val) && digits.length >= 10 && digits.length <= 15
+  );
+};
 
 const contactFormSchema = z.object({
   firstName: z.string().min(2, "First name must be at least 2 characters"),
@@ -27,10 +34,12 @@ const contactFormSchema = z.object({
     .string()
     .optional()
     .refine(
-      (val) => !val || phoneRegex.test(val),
+      (val) => !val || isValidPhone(val),
       "Please enter a valid phone number",
     ),
   message: z.string().min(10, "Message must be at least 10 characters"),
+  // Honeypot: stays false for real people
+  botcheck: z.boolean().optional(),
 });
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
@@ -46,13 +55,23 @@ const ContactForm = () => {
       email: "",
       phone: "",
       message: "",
+      botcheck: false,
     },
   });
 
   const onSubmit = async (data: ContactFormValues) => {
     try {
-      console.log("Form submitted:", data);
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      const result = await sendContactEmail({
+        name: `${data.firstName} ${data.lastName}`.trim(),
+        email: data.email,
+        phone: data.phone,
+        message: data.message,
+        source: "Contact page",
+        botcheck: data.botcheck,
+      });
+
+      if (!result.ok) throw new Error(result.error);
+
       toast({
         title: "Message sent successfully!",
         description: "We'll get back to you as soon as possible.",
@@ -64,7 +83,7 @@ const ContactForm = () => {
         setIsSuccess(false);
       }, 3000);
       setError(null);
-    } catch (error) {
+    } catch (err) {
       toast({
         title: "Failed to send message",
         description: "Please try again later or contact us directly.",
@@ -148,6 +167,16 @@ const ContactForm = () => {
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-6">
+                {/* Honeypot: hidden from people, bots tick it */}
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  {...form.register("botcheck")}
+                />
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <FormField
                     control={form.control}
@@ -256,7 +285,7 @@ const ContactForm = () => {
                   size="lg"
                   className="w-full h-14 rounded-full bg-gradient-to-b from-white to-[#d1d1d1] text-black font-medium hover:opacity-90 transition-opacity mt-4"
                   disabled={form.formState.isSubmitting}>
-                  Send Message
+                  {form.formState.isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
 
                 {isSuccess && (

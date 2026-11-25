@@ -66,7 +66,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/mobile-app-development.png"
+            src="/images/feature/mobile-app-development.webp"
             alt="Close-up shot of a smartphone screen showing various app icons."></FeatureCardImage>
         </FeatureCard>
 
@@ -75,7 +75,7 @@ const Features = () => {
           imagePosition="left"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/ios-app-dev.png"
+            src="/images/feature/ios-app-dev.webp"
             alt="Close-up shot of a iPhone screen showing various app icons."></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>iOS Application Development</FeatureCardTitle>
@@ -131,7 +131,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="https://supabase.com/dashboard/project/huezrclcfmhwoesxhbsx/storage/files/buckets/Maple%20Matrix?preview=cross.png"
+            src="/images/feature/cross.webp"
             alt="Business meeting and investment growth"></FeatureCardImage>
         </FeatureCard>
       </Container>

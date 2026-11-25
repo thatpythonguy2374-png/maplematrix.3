@@ -1,5 +1,6 @@
 import { AnimateOnView } from "@/components/ui/motion/animate-on-view";
 import { StaggerContainer } from "@/components/ui/motion/stagger";
+import ServiceEnquiryForm from "@/components/sections/shared/service-enquiry-form";
 
 const Hero = () => {
   return (
@@ -63,105 +64,7 @@ const Hero = () => {
                     </p>
                   </div>
 
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-
-                      const form = e.currentTarget;
-                      const formData = new FormData(form);
-
-                      const enquiry = {
-                        name: formData.get("name"),
-                        phone: formData.get("phone"),
-                        service: formData.get("service"),
-                      };
-
-                      console.log("E-commerce enquiry:", enquiry);
-
-                      // Connect your backend/API here.
-                      // Example: await fetch("/api/enquiries", { ... })
-
-                      form.reset();
-                    }}
-                    className="space-y-5">
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="mb-2 block text-sm font-medium text-[#F5F1ED]">
-                        Full Name
-                      </label>
-                      <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        placeholder="Enter your full name"
-                        required
-                        className="w-full rounded-xl border border-[#493B30] bg-[#0E0D0C]/80 px-4 py-3 text-sm text-[#F5F1ED] outline-none transition placeholder:text-[#786C63] focus:border-[#C9A283] focus:ring-2 focus:ring-[#C9A283]/15"
-                      />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="phone"
-                        className="mb-2 block text-sm font-medium text-[#F5F1ED]">
-                        Phone Number
-                      </label>
-                      <input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        placeholder="+91 98765 43210"
-                        pattern="[+]?[0-9\s-]{10,15}"
-                        required
-                        className="w-full rounded-xl border border-[#493B30] bg-[#0E0D0C]/80 px-4 py-3 text-sm text-[#F5F1ED] outline-none transition placeholder:text-[#786C63] focus:border-[#C9A283] focus:ring-2 focus:ring-[#C9A283]/15"
-                      />
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="service"
-                        className="mb-2 block text-sm font-medium text-[#F5F1ED]">
-                        Type of Service
-                      </label>
-                      <select
-                        id="service"
-                        name="service"
-                        required
-                        defaultValue="E-commerce Development"
-                        className="w-full appearance-none rounded-xl border border-[#493B30] bg-[#0E0D0C]/80 px-4 py-3 text-sm text-[#B8AAA0] outline-none transition focus:border-[#C9A283] focus:ring-2 focus:ring-[#C9A283]/15">
-                        <option value="E-commerce Development">
-                          E-commerce Website Development
-                        </option>
-                        <option value="Custom Online Store">
-                          Custom Online Store
-                        </option>
-                        <option value="Marketplace Development">
-                          Multi-vendor Marketplace
-                        </option>
-                        <option value="B2B E-commerce">
-                          B2B E-commerce Platform
-                        </option>
-                        <option value="E-commerce Redesign">
-                          E-commerce Redesign
-                        </option>
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#C9A283] to-[#8F6B52] px-6 py-3.5 text-sm font-semibold text-[#17110D] shadow-lg shadow-[#8F6B52]/15 transition hover:-translate-y-0.5 hover:shadow-[#8F6B52]/30">
-                      Get a Free Consultation
-                      <span className="transition-transform group-hover:translate-x-1">
-                        →
-                      </span>
-                    </button>
-
-                    <p className="text-center text-xs text-[#887B70]">
-                      Your information is safe with us. We'll only contact you
-                      about your enquiry.
-                    </p>
-                  </form>
+                  <ServiceEnquiryForm />
                 </div>
               </div>
             </AnimateOnView>

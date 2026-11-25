@@ -65,7 +65,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/web-dev.png"
+            src="/images/feature/web-dev.webp"
             alt="Image showing laptop screen with wordpress in it."
             className="border-2"></FeatureCardImage>
         </FeatureCard>
@@ -75,7 +75,7 @@ const Features = () => {
           imagePosition="left"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/e-commerce.png"
+            src="/images/feature/e-commerce.webp"
             alt="Person making payment transfer"></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>E-commerce Websites</FeatureCardTitle>
@@ -131,7 +131,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/landing.png"
+            src="/images/feature/landing.webp"
             alt="Business meeting and investment growth"></FeatureCardImage>
         </FeatureCard>
         {/* Card 4: CRM Development */}
@@ -139,7 +139,7 @@ const Features = () => {
           imagePosition="left"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/crm.png"
+            src="/images/feature/crm.webp"
             alt="CRM dashboard showing customer and sales management"
           />
 
@@ -204,7 +204,7 @@ const Features = () => {
           </FeatureCardContent>
 
           <FeatureCardImage
-            src="/images/feature/redesign.png"
+            src="/images/feature/redesign.webp"
             alt="Old website transforming into a modern redesigned website"
           />
         </FeatureCard>
@@ -213,7 +213,7 @@ const Features = () => {
           imagePosition="left"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/support.png"
+            src="/images/feature/support.webp"
             alt="Website maintenance dashboard showing security and performance"
           />
 

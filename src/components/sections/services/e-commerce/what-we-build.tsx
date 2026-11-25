@@ -66,7 +66,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/custom-e-commerce.png"
+            src="/images/feature/custom-e-commerce.webp"
             alt="Person working on laptop to design catalogue."></FeatureCardImage>
         </FeatureCard>
 
@@ -75,7 +75,7 @@ const Features = () => {
           imagePosition="left"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/online-pay.png"
+            src="/images/feature/online-pay.webp"
             alt="Person making payment transfer"></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>
@@ -134,7 +134,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/shipping.png"
+            src="/images/feature/shipping.webp"
             alt="Business meeting and investment growth"></FeatureCardImage>
         </FeatureCard>
         {/* Card 4: Product upload and catalogue set-up */}
@@ -142,7 +142,7 @@ const Features = () => {
           imagePosition="left"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/product-upload.png"
+            src="/images/feature/product-upload.webp"
             alt="A stylish open magazine on a minimalistic desk with a blurred background."
           />
 
@@ -208,7 +208,7 @@ const Features = () => {
           </FeatureCardContent>
 
           <FeatureCardImage
-            src="/images/feature/e-commerce-seo.png"
+            src="/images/feature/e-commerce-seo.webp"
             alt="A notebook with handwritten Amazon SEO strategies."
           />
         </FeatureCard>

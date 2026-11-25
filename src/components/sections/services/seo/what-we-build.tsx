@@ -63,7 +63,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/seo-audit.png"
+            src="/images/feature/seo-audit.webp"
             alt="A laptop displaying the core web vitals of SEO through Google Search Console"></FeatureCardImage>
         </FeatureCard>
 
@@ -72,7 +72,7 @@ const Features = () => {
           imagePosition="left"
           className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/e-commerce-seo.png"
+            src="/images/feature/e-commerce-seo.webp"
             alt="A notebook with handwritten Amazon SEO strategies"></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>E-commerce SEO</FeatureCardTitle>
@@ -129,7 +129,7 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/ai-seo.png"
+            src="/images/feature/ai-seo.webp"
             alt="Eyeglasses next to a smartphone displaying the ChatGPT AI app on a patterned surface. AI search optimization help yo get your brand in the AI chat recommendations"></FeatureCardImage>
         </FeatureCard>
       </Container>

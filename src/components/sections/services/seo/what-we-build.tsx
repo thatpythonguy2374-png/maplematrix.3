@@ -38,8 +38,7 @@ const Features = () => {
         {/* Card 1: Intelligent Financial Insights */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle className="mb-5">SEO Audit</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -64,20 +63,17 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/feature-alt-1.png"
-            alt="Man using smartphone for financial analytics"
-          ></FeatureCardImage>
+            src="/images/feature/seo-audit.png"
+            alt="A laptop displaying the core web vitals of SEO through Google Search Console"></FeatureCardImage>
         </FeatureCard>
 
         {/* Card 2: Effortless Payments And Transfers */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/feature-alt-2.png"
-            alt="Person making payment transfer"
-          ></FeatureCardImage>
+            src="/images/feature/e-commerce-seo.png"
+            alt="A notebook with handwritten Amazon SEO strategies"></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>E-commerce SEO</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -108,8 +104,7 @@ const Features = () => {
         {/* Card 3: Flexible Business Solutions */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle>AI search optimization</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -134,9 +129,8 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/feature-alt-3.png"
-            alt="Business meeting and investment growth"
-          ></FeatureCardImage>
+            src="/images/feature/ai-seo.png"
+            alt="Eyeglasses next to a smartphone displaying the ChatGPT AI app on a patterned surface. AI search optimization help yo get your brand in the AI chat recommendations"></FeatureCardImage>
         </FeatureCard>
       </Container>
     </section>

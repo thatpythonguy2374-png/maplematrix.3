@@ -33,10 +33,10 @@ const Hero = () => {
 
             <AnimateOnView blur delay={0.2}>
               <p className="text-body-md text-[#E3DAD2] max-w-2xl mx-auto mb-5">
-                Your website is more than just an online presence. It's where
-                people discover your brand, explore your services, and decide to
-                work with you. We build digital experiences that make every
-                interaction count.
+                Your website is more than just an online identity. It's where
+                people find your brand, get to know tour services and decide to
+                work with you. We build digital experiences that matter on every
+                interation.
               </p>
             </AnimateOnView>
           </StaggerContainer>

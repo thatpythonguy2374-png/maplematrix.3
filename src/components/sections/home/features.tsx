@@ -18,7 +18,7 @@ const cards = [
     title: "Looks right on every screen",
     description:
       "Your customers switch between phones, tablets and laptops all day. We build each page to feel natural on every one of them, so nobody has to pinch, zoom or squint to find what they need.",
-    imageSrc: "images/home/feature-1.png",
+    imageSrc: "images/home/feature-1.webp",
     imageAlt: "A website displayed on a phone, tablet and desktop",
     cta: "See our work",
   },
@@ -27,7 +27,7 @@ const cards = [
     title: "Fast from the very first click",
     description:
       "People leave slow websites without a second thought. We keep our code clean and our images light, so your site opens quickly and keeps visitors around long enough to become customers.",
-    imageSrc: "images/home/feature-2.png",
+    imageSrc: "images/home/feature-2.webp",
     imageAlt: "A fast-loading website with performance scores",
     cta: "See how we build",
   },
@@ -36,7 +36,7 @@ const cards = [
     title: "Made around your brand",
     description:
       "No cookie-cutter templates here. We start by getting to know your story, your goals and your audience, then design a site that looks and sounds like you.",
-    imageSrc: "images/home/feature-3.png",
+    imageSrc: "images/home/feature-3.webp",
     imageAlt: "A custom website design with a brand's colors and style",
     cta: "Start a project",
   },
@@ -52,9 +52,9 @@ const Features = () => {
           </AnimateOnView>
           <AnimateOnView blur delay={0.2}>
             <p className="text-muted-foreground">
-              We design and build sites that look great, load quickly and feel
-              right on any device, so more of your visitors stay, trust you and
-              get in touch.
+              Website is a reflection of your business. With that in mind we
+              build high performance, build for your brand, websites that work
+              seamlessly across every device.
             </p>
           </AnimateOnView>
         </StaggerContainer>

@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AnimateOnView } from "@/components/ui/motion/animate-on-view";
 import { StaggerContainer } from "@/components/ui/motion/stagger";
+import { getDriveImageUrl } from "@/lib/drive";
 
 const Hero = () => {
+  const iPhone =
+    "https://drive.google.com/thumbnail?id=10mqipo1UIlYC18MhgQLVjdox_b8lR88a&sz=w1000";
+
   return (
     <section
       className="
@@ -70,7 +74,7 @@ const Hero = () => {
               <div className="absolute bottom-0 left-[2%] w-[38%] aspect-[568/728] z-0">
                 <AnimateOnView delay={0.3} className="w-full h-full">
                   <img
-                    src="/images/home/tablet.png"
+                    src="/images/home/tablet.webp"
                     alt="Responsive website displayed on a tablet"
                     width={568}
                     height={728}
@@ -85,7 +89,7 @@ const Hero = () => {
               <div className="absolute bottom-0 right-0 w-[50%] aspect-[808/600] z-0">
                 <AnimateOnView delay={0.1} className="w-full h-full">
                   <img
-                    src="/images/home/desktop.png"
+                    src="/images/home/desktop.webp"
                     alt="Website displayed on a desktop monitor"
                     width={808}
                     height={600}
@@ -100,7 +104,7 @@ const Hero = () => {
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[28%] aspect-[408/808] z-10">
                 <AnimateOnView delay={0.2} className="w-full h-full">
                   <img
-                    src="/images/home/phone.png"
+                    src="/images/home/phone.webp"
                     alt="Website displayed on a mobile phone"
                     width={408}
                     height={808}

@@ -37,8 +37,7 @@ const Features = () => {
         {/* Card 1: Intelligent Financial Insights */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle className="mb-5">
               Business Websites
@@ -67,20 +66,17 @@ const Features = () => {
           </FeatureCardContent>
           <FeatureCardImage
             src="/images/feature/web-dev.png"
-            alt="Man using smartphone for financial analytics"
-            className="border-2"
-          ></FeatureCardImage>
+            alt="Image showing laptop screen with wordpress in it."
+            className="border-2"></FeatureCardImage>
         </FeatureCard>
 
         {/* Card 2: Effortless Payments And Transfers */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/feature-alt-2.png"
-            alt="Person making payment transfer"
-          ></FeatureCardImage>
+            src="/images/feature/e-commerce.png"
+            alt="Person making payment transfer"></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>E-commerce Websites</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -109,8 +105,7 @@ const Features = () => {
         {/* Card 3: Flexible Business Solutions */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle>Landing pages</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -136,17 +131,15 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/feature-alt-3.png"
-            alt="Business meeting and investment growth"
-          ></FeatureCardImage>
+            src="/images/feature/landing.png"
+            alt="Business meeting and investment growth"></FeatureCardImage>
         </FeatureCard>
         {/* Card 4: CRM Development */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/crm-development.png"
+            src="/images/feature/crm.png"
             alt="CRM dashboard showing customer and sales management"
           />
 
@@ -181,8 +174,7 @@ const Features = () => {
         {/* Card 5: Website Redesign & Migration */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle>Website Redesign & Migration</FeatureCardTitle>
 
@@ -212,17 +204,16 @@ const Features = () => {
           </FeatureCardContent>
 
           <FeatureCardImage
-            src="/images/feature/website-redesign.png"
+            src="/images/feature/redesign.png"
             alt="Old website transforming into a modern redesigned website"
           />
         </FeatureCard>
         {/* Card 6: Website Maintenance & Support */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/website-maintenance.png"
+            src="/images/feature/support.png"
             alt="Website maintenance dashboard showing security and performance"
           />
 

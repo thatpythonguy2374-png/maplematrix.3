@@ -38,8 +38,7 @@ const Features = () => {
         {/* Card 1: Intelligent Financial Insights */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle className="mb-5">
               Android Application Development
@@ -67,20 +66,17 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/feature-alt-1.png"
-            alt="Man using smartphone for financial analytics"
-          ></FeatureCardImage>
+            src="/images/feature/mobile-app-development.png"
+            alt="Close-up shot of a smartphone screen showing various app icons."></FeatureCardImage>
         </FeatureCard>
 
         {/* Card 2: Effortless Payments And Transfers */}
         <FeatureCard
           imagePosition="left"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardImage
-            src="/images/feature/feature-alt-2.png"
-            alt="Person making payment transfer"
-          ></FeatureCardImage>
+            src="/images/feature/ios-app-dev.png"
+            alt="Close-up shot of a iPhone screen showing various app icons."></FeatureCardImage>
           <FeatureCardContent>
             <FeatureCardTitle>iOS Application Development</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -109,8 +105,7 @@ const Features = () => {
         {/* Card 3: Flexible Business Solutions */}
         <FeatureCard
           imagePosition="right"
-          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24"
-        >
+          className="border-0 bg-[rgba(20,20,20,1)] sticky top-24">
           <FeatureCardContent>
             <FeatureCardTitle>Cross Platform Applications</FeatureCardTitle>
             <FeatureCardDescription className="mb-5">
@@ -136,9 +131,8 @@ const Features = () => {
             </FeatureCardAction>
           </FeatureCardContent>
           <FeatureCardImage
-            src="/images/feature/feature-alt-3.png"
-            alt="Business meeting and investment growth"
-          ></FeatureCardImage>
+            src="https://supabase.com/dashboard/project/huezrclcfmhwoesxhbsx/storage/files/buckets/Maple%20Matrix?preview=cross.png"
+            alt="Business meeting and investment growth"></FeatureCardImage>
         </FeatureCard>
       </Container>
     </section>

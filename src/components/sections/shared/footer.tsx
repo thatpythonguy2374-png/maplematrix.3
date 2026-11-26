@@ -5,25 +5,20 @@ import { Link } from "react-router-dom";
 const pageLinks = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
-  { title: "Our Work", href: "/feature" },
-  { title: "Blog", href: "/blog" },
-  { title: "Pricing", href: "/pricing" },
+
   { title: "Contact", href: "/contact" },
 ];
 
 const serviceLinks = [
+  { title: "Website Development", href: "/services/website-development" },
   { title: "E-Commerce Development", href: "/services/e-commerce" },
   { title: "SEO Services", href: "/services/seo" },
-  { title: "UI/UX Design", href: "/services/ui-ux-design" },
-  { title: "Web Applications", href: "/services/web-applications" },
-  { title: "Website Development", href: "/services/website-development" },
-  { title: "Website Maintenance", href: "/services/website-maintain" },
+  { title: "Mobile App Development", href: "/services/mobile-app-development" },
 ];
 
 const utilityLinks = [
   { title: "Privacy Policy", href: "/legal/privacy-policy" },
   { title: "Terms & Conditions", href: "/legal/terms-&-condition" },
-  { title: "Cookie Policy", href: "/legal/cookie-policy" },
 ];
 
 const socialLinks = [
@@ -34,7 +29,7 @@ const socialLinks = [
   },
   {
     icon: Instagram,
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/maple_matrix/",
     label: "Instagram",
   },
   {
@@ -83,7 +78,8 @@ const Footer = () => {
                   <li key={link.title}>
                     <Link
                       to={link.href}
-                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300">
+                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300"
+                    >
                       {link.title}
                     </Link>
                   </li>
@@ -102,7 +98,8 @@ const Footer = () => {
                   <li key={link.title}>
                     <Link
                       to={link.href}
-                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300">
+                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300"
+                    >
                       {link.title}
                     </Link>
                   </li>
@@ -119,7 +116,8 @@ const Footer = () => {
                   <li key={link.title}>
                     <Link
                       to={link.href}
-                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300">
+                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300"
+                    >
                       {link.title}
                     </Link>
                   </li>
@@ -145,7 +143,8 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="w-10 h-10 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                className="w-10 h-10 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+              >
                 <social.icon className="w-4 h-4" />
               </a>
             ))}

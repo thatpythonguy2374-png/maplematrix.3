@@ -27,19 +27,19 @@ const faqs = [
       "The costing of the project depends on the project scope and features. It depends on the size and complexity of the project. A simple business website usually takes 2-4 weeks, while larger websites with custom features or e-commerce can take 6-12 weeks. After understanding your requirements, we'll share a clear timeline.",
   },
   {
-    question: "Why should I choose Maple Matrix?",
+    question: "Will my website be mobile friendly?",
     answer:
-      "We care about more than just making a website look good. We focus on creating websites that are easy to use, work smoothly across devices, and support your business goals. From the first conversation to the final launch, we keep things simple, transparent, and focused on getting things right.",
+      "Yes, we build every website high performance and responsive to work seamlessly across multiple devices.",
   },
   {
-    question: "How long does it take to develop a website?",
+    question: "Which e-commerce platforms do you work with?",
     answer:
-      "It really depends on what you're looking to build. A simple business website may take a few weeks, while a more feature-rich website or custom application can take longer. Once we understand your requirements, we'll give you a realistic timeline so you know what to expect.",
+      "We choose the platform according to your requirement. Shopify is ideal for businesses looking for a quick, hassle-free setup, whereas Woocommerce is best for businesses seeking felixibility and great control over website. The custom development suits for the businesses that requires unique features and advanced integrations. ",
   },
   {
-    question: "How can I get started with Maple Matrix?",
+    question: "Do you build apps for both iOS and Android?",
     answer:
-      "It's pretty simple! Just get in touch with us and tell us a little about your idea or project. We'll have a conversation about what you're looking to achieve, understand your requirements, and help you figure out the next steps. No complicated process, just a good conversation to get things moving.",
+      "Yes. We develop native apps for iOS and Android as well as cross-platform apps (using frameworks like React Native and Flutter) to save time and development costs.",
   },
 ];
 
@@ -99,22 +99,6 @@ const FAQ = () => {
             </AnimateOnView>
           </div>
         </div>
-
-        {/* Contact CTA */}
-        <AnimateOnView once y={20} delay={0.2}>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 max-w-xl mx-auto md:mt-20 mt-8 md:py-2 md:pr-2 py-4 pr-4 pl-8 md:rounded-full rounded-md bg-card/50 border border-border/50 backdrop-blur-sm">
-            <p className="text-lg font-medium text-center sm:text-left">
-              Can't find the answer you're looking for?
-            </p>
-
-            <Button
-              asChild
-              className="rounded-full px-6 bg-foreground text-background hover:bg-foreground/90 w-full sm:w-auto"
-            >
-              <Link to="/contact">Ask Something</Link>
-            </Button>
-          </div>
-        </AnimateOnView>
       </Container>
     </section>
   );

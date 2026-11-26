@@ -55,7 +55,7 @@ const About = () => {
         <ConfidenceSection />
         <InnovationSection />
         <JourneySection />
-        <AboutTestimonials />
+        {/* <AboutTestimonials /> */}
         <WorldwideStats />
       </Layout>
     </>

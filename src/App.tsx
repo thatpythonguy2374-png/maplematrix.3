@@ -17,15 +17,12 @@ import Feature from "./pages/feature";
 import Home from "./pages/home";
 import Integration from "./pages/integration";
 import IntegrationDetailsPage from "./pages/integration/[slug]";
-import CookiePolicyPage from "./pages/legal/cookie-policy";
+
 import PrivacyPolicyPage from "./pages/legal/privacy-&-policy";
 import TermsAndConditionPage from "./pages/legal/terms-&-condition";
-import LoginPage from "./pages/login";
+
 import NotFound from "./pages/not-found";
-import Pricing from "./pages/pricing";
-import ProfessionalPricing from "./pages/pricing/professional";
-import StarterPricing from "./pages/pricing/starter";
-import SignupPage from "./pages/signup";
+
 import ECommerce from "./pages/services/e-commerce";
 import SEO from "./pages/services/seo";
 import MobileApp from "./pages/services/mobile-app-development";
@@ -48,12 +45,6 @@ const App = () => (
               <Route path="/feature" element={<Feature />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/pricing" element={<Pricing />} />
-              <Route path="/pricing/starter" element={<StarterPricing />} />
-              <Route
-                path="/pricing/professional"
-                element={<ProfessionalPricing />}
-              />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/integration" element={<Integration />} />
@@ -66,8 +57,7 @@ const App = () => (
               <Route path="/dashboard/blog" element={<BlogDashboard />} />
               <Route path="/dashboard/blog/new" element={<BlogEditor />} />
               <Route path="/dashboard/blog/edit/:id" element={<BlogEditor />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/signup" element={<SignupPage />} />
+
               <Route
                 path="/legal/terms-&-condition"
                 element={<TermsAndConditionPage />}
@@ -76,10 +66,7 @@ const App = () => (
                 path="/legal/privacy-policy"
                 element={<PrivacyPolicyPage />}
               />
-              <Route
-                path="/legal/cookie-policy"
-                element={<CookiePolicyPage />}
-              />
+
               <Route path="/services/e-commerce" element={<ECommerce />} />
               <Route path="/services/seo" element={<SEO />} />
               <Route

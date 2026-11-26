@@ -97,7 +97,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="hero-padding-top pb-20">
+    <section
+      className="hero-padding-top pb-20  bg-[url('/images/home/hero-bg.webp')]
+        bg-cover bg-center bg-no-repeat"
+    >
       <Container className="space-y-12">
         {/* Header Section */}
         <div className="text-center max-w-[540px] mx-auto space-y-4">
@@ -166,7 +169,8 @@ const ContactForm = () => {
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-6">
+                className="space-y-6"
+              >
                 {/* Honeypot: hidden from people, bots tick it */}
                 <input
                   type="checkbox"
@@ -284,7 +288,8 @@ const ContactForm = () => {
                   type="submit"
                   size="lg"
                   className="w-full h-14 rounded-full bg-gradient-to-b from-white to-[#d1d1d1] text-black font-medium hover:opacity-90 transition-opacity mt-4"
-                  disabled={form.formState.isSubmitting}>
+                  disabled={form.formState.isSubmitting}
+                >
                   {form.formState.isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
 

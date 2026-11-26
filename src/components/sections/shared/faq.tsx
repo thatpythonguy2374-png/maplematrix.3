@@ -12,19 +12,19 @@ import { Link } from "react-router-dom";
 
 const faqs = [
   {
-    question: "What is Maple Matrix?",
-    answer:
-      "Maple Matrix is a web development and digital solutions studio that helps businesses bring their ideas to life online. Whether you're starting from scratch or looking to improve your existing website, we work with you to create digital experiences that reflect your brand and help your business grow.",
-  },
-  {
     question: "What services does Maple Matrix offer?",
     answer:
-      "We help businesses with everything from website design and development to UI/UX design, web applications, mobile apps, and AI-powered solutions. Every project is different, so we take the time to understand what you need before finding the right solution.",
+      "We provide variety of services including Website Development, E-Commerce Website, Mobile App Development and SEO related services.",
   },
   {
-    question: "Do you create custom websites or use templates?",
+    question: "How long does it take to build a website and app?",
     answer:
-      "We don't believe in making every website look the same. We take the time to understand your business, your audience, and what makes your brand different. Based on that, we create a website that feels like yours, rather than something copied from a ready-made template.",
+      "It depends on the size and complexity of the project. A simple business website usually takes 2-4 weeks, while larger websites with custom features or e-commerce can take 6-12 weeks. After understanding your requirements, we'll share a clear timeline.",
+  },
+  {
+    question: "How much do your services cost?",
+    answer:
+      "The costing of the project depends on the project scope and features. It depends on the size and complexity of the project. A simple business website usually takes 2-4 weeks, while larger websites with custom features or e-commerce can take 6-12 weeks. After understanding your requirements, we'll share a clear timeline.",
   },
   {
     question: "Why should I choose Maple Matrix?",
@@ -71,12 +71,14 @@ const FAQ = () => {
                 type="single"
                 collapsible
                 defaultValue="item-0"
-                className="w-full">
+                className="w-full"
+              >
                 {faqs.map((faq, index) => (
                   <AccordionItem
                     key={index}
                     value={`item-${index}`}
-                    className="border-b border-border/40 px-0">
+                    className="border-b border-border/40 px-0"
+                  >
                     <AccordionTrigger className="group text-left py-6 hover:no-underline [&>svg]:hidden">
                       <span className="h4 pr-8">{faq.question}</span>
 
@@ -107,7 +109,8 @@ const FAQ = () => {
 
             <Button
               asChild
-              className="rounded-full px-6 bg-foreground text-background hover:bg-foreground/90 w-full sm:w-auto">
+              className="rounded-full px-6 bg-foreground text-background hover:bg-foreground/90 w-full sm:w-auto"
+            >
               <Link to="/contact">Ask Something</Link>
             </Button>
           </div>

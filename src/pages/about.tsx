@@ -52,10 +52,10 @@ const About = () => {
       </Helmet>
       <Layout>
         <AboutHero />
-        <ConfidenceSection />
+        <AboutTestimonials />
+        {/* <ConfidenceSection /> */}
         <InnovationSection />
         <JourneySection />
-        {/* <AboutTestimonials /> */}
         <WorldwideStats />
       </Layout>
     </>

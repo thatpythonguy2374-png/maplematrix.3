@@ -13,40 +13,40 @@ import {
 
 const features = [
   {
-    title: "Custom Web Development",
+    title: "Website Development",
     description:
       "Tailor-made websites built around your business goals, functionality, and unique requirements.",
     icon: Code2,
   },
   {
-    title: "UI/UX Design",
+    title: "Website Re-design",
     description:
-      "Intuitive, visually engaging interfaces that create seamless experiences for your customers.",
+      "Give your existing website a modern look. We improve design, speed and user experience, making it look better, work faster and get better results for your business.",
     icon: Palette,
   },
   {
     title: "E-commerce Solutions",
     description:
-      "Powerful online stores with seamless shopping experiences, secure payments, and easy management.",
+      "Create your online store to sell products or services on the internet. We create user friendly, easy to use and secure e-commerce websites to help you expand your business and reach more customers.",
     icon: ShoppingCart,
   },
   {
     title: "SEO & Digital Presence",
     description:
-      "Improve your online visibility with search-friendly websites and performance-focused strategies.",
+      "Improve your wehsbite's visibilty on Google and reach more potential customer. We use effective SEO strategies to help your business rank higher in search results and grow online.",
     icon: Search,
   },
   {
-    title: "Responsive Development",
+    title: "Mobile App Development",
     description:
-      "Fast, flexible websites that look and perform beautifully across desktops, tablets, and mobiles.",
+      "Transform your ideas into powerful mobile apps. We create simple-to-use Android and iOS apps to help your business engage with customers and grow digitally.",
     icon: Smartphone,
     highlight: true,
   },
   {
     title: "Maintenance & Support",
     description:
-      "Reliable updates, security improvements, and ongoing technical support to keep your website running smoothly.",
+      "Keep your website and app running smoothly, securely and up to date. We offer regular updates, bug fixes, security checks and technical support when you need it.",
     icon: ShieldCheck,
   },
 ];

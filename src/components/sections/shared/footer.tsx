@@ -22,26 +22,26 @@ const utilityLinks = [
 ];
 
 const socialLinks = [
-  {
-    icon: Facebook,
-    href: "https://www.facebook.com/",
-    label: "Facebook",
-  },
+  // {
+  //   icon: Facebook,
+  //   href: "https://www.facebook.com/",
+  //   label: "Facebook",
+  // },
   {
     icon: Instagram,
     href: "https://www.instagram.com/maple_matrix/",
     label: "Instagram",
   },
-  {
-    icon: Twitter,
-    href: "https://x.com/",
-    label: "X",
-  },
-  {
-    icon: Linkedin,
-    href: "https://www.linkedin.com/",
-    label: "LinkedIn",
-  },
+  // {
+  //   icon: Twitter,
+  //   href: "https://x.com/",
+  //   label: "X",
+  // },
+  // {
+  //   icon: Linkedin,
+  //   href: "https://www.linkedin.com/",
+  //   label: "LinkedIn",
+  // },
 ];
 
 const Footer = () => {
@@ -61,9 +61,9 @@ const Footer = () => {
             </Link>
 
             <p className="text-white/50 text-sm leading-7 mt-6 max-w-sm">
-              We turn ideas into meaningful digital experiences. From creative
-              design to powerful development, we help businesses build, grow,
-              and thrive online.
+              We transform ideas into meaningful digital experiences. We help
+              businesses build, grow and thrive online. From creative design to
+              powerful development.
             </p>
           </div>
 
@@ -78,8 +78,7 @@ const Footer = () => {
                   <li key={link.title}>
                     <Link
                       to={link.href}
-                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300"
-                    >
+                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300">
                       {link.title}
                     </Link>
                   </li>
@@ -98,8 +97,7 @@ const Footer = () => {
                   <li key={link.title}>
                     <Link
                       to={link.href}
-                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300"
-                    >
+                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300">
                       {link.title}
                     </Link>
                   </li>
@@ -116,8 +114,7 @@ const Footer = () => {
                   <li key={link.title}>
                     <Link
                       to={link.href}
-                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300"
-                    >
+                      className="text-[15px] text-white/65 hover:text-white transition-colors duration-300">
                       {link.title}
                     </Link>
                   </li>
@@ -143,8 +140,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="w-10 h-10 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-              >
+                className="w-10 h-10 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                 <social.icon className="w-4 h-4" />
               </a>
             ))}

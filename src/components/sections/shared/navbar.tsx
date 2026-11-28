@@ -5,7 +5,6 @@ import { Menu, XIcon, ChevronDown } from "lucide-react";
 import React from "react";
 
 import Container from "@/components/container";
-import UserMenu from "@/components/sections/shared/user-menu";
 import { Button } from "@/components/ui/button";
 
 import {
@@ -25,7 +24,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { useAuth } from "@/hooks/use-auth";
 import { Link } from "react-router-dom";
 
 // Maple Matrix Services
@@ -46,16 +44,9 @@ const servicePages = [
     name: "Mobile App Development",
     href: "/services/mobile-app-development",
   },
-
-  // {
-  //   name: "Website Maintenance",
-  //   href: "/services/website-maintain",
-  // },
 ];
 
 const Navbar = () => {
-  const { user, loading } = useAuth();
-
   const [isOpen, setIsOpen] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = React.useState(false);
@@ -83,14 +74,12 @@ const Navbar = () => {
         scrolled
           ? "border-b border-border bg-background/80 py-3 backdrop-blur-md"
           : "py-6 md:py-10"
-      }`}
-    >
+      }`}>
       <Container className="flex items-center justify-between">
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center space-x-2 xl:w-[35%] md:w-[30%] w-fit"
-        >
+          className="flex items-center space-x-2 xl:w-[35%] md:w-[30%] w-fit">
           <img
             src="/images/common/logo1.png"
             alt="Maple Matrix"
@@ -105,8 +94,7 @@ const Navbar = () => {
               <button
                 type="button"
                 aria-label="Open menu"
-                className="cursor-pointer text-white h-11 w-11 flex items-center justify-center"
-              >
+                className="cursor-pointer text-white h-11 w-11 flex items-center justify-center">
                 <Menu className="w-6 h-6" />
               </button>
             </SheetTrigger>
@@ -134,8 +122,7 @@ const Navbar = () => {
                 <Link
                   to="/about"
                   onClick={closeMobileMenu}
-                  className="block py-3 text-lg text-white hover:text-primary transition-colors"
-                >
+                  className="block py-3 text-lg text-white hover:text-primary transition-colors">
                   About
                 </Link>
 
@@ -145,8 +132,7 @@ const Navbar = () => {
                     type="button"
                     aria-expanded={mobileServicesOpen}
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                    className="flex items-center justify-between w-full py-3 text-lg text-white hover:text-primary transition-colors"
-                  >
+                    className="flex items-center justify-between w-full py-3 text-lg text-white hover:text-primary transition-colors">
                     Services
                     <ChevronDown
                       className={`w-5 h-5 transition-transform duration-300 ${
@@ -160,8 +146,7 @@ const Navbar = () => {
                       mobileServicesOpen
                         ? "grid-rows-[1fr] opacity-100"
                         : "grid-rows-[0fr] opacity-0"
-                    }`}
-                  >
+                    }`}>
                     <div className="overflow-hidden">
                       <div className="ml-1 pl-3 border-l border-white/10 space-y-1 pb-2">
                         {servicePages.map((service) => (
@@ -170,8 +155,7 @@ const Navbar = () => {
                             to={service.href}
                             onClick={closeMobileMenu}
                             tabIndex={mobileServicesOpen ? 0 : -1}
-                            className="block rounded-md px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-white"
-                          >
+                            className="block rounded-md px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-white">
                             {service.name}
                           </Link>
                         ))}
@@ -180,18 +164,13 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                {/* Contact Us / User Menu (same logic as desktop) */}
+                {/* Contact Us Button */}
                 <div className="pt-5 mt-3 border-t border-white/10">
-                  {!loading &&
-                    (user ? (
-                      <UserMenu />
-                    ) : (
-                      <Button asChild className="w-full rounded-full">
-                        <Link to="/contact" onClick={closeMobileMenu}>
-                          Contact Us
-                        </Link>
-                      </Button>
-                    ))}
+                  <Button asChild className="w-full rounded-full">
+                    <Link to="/contact" onClick={closeMobileMenu}>
+                      Contact Us
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </SheetContent>
@@ -206,8 +185,7 @@ const Navbar = () => {
               <NavigationMenuLink asChild>
                 <Link
                   to="/about"
-                  className="px-4 py-2 text-white hover:text-primary transition-colors"
-                >
+                  className="px-4 py-2 text-white hover:text-primary transition-colors">
                   About
                 </Link>
               </NavigationMenuLink>
@@ -226,8 +204,7 @@ const Navbar = () => {
                       <NavigationMenuLink asChild key={service.href}>
                         <Link
                           to={service.href}
-                          className="block rounded-md px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none"
-                        >
+                          className="block rounded-md px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none">
                           {service.name}
                         </Link>
                       </NavigationMenuLink>
@@ -241,14 +218,9 @@ const Navbar = () => {
 
         {/* Desktop Contact / User Menu */}
         <div className="hidden lg:flex gap-2 items-center xl:w-[35%] md:w-[30%] w-fit justify-end">
-          {!loading &&
-            (user ? (
-              <UserMenu />
-            ) : (
-              <Button asChild>
-                <Link to="/contact">Contact Us</Link>
-              </Button>
-            ))}
+          <Button asChild>
+            <Link to="/contact">Contact Us</Link>
+          </Button>
         </div>
       </Container>
     </header>

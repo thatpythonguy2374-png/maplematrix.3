@@ -63,8 +63,8 @@ const ConfidenceSection = () => {
               key={index}
               className="py-6 pl-6 pr-3 rounded-[20px] bg-card border border-border flex flex-col gap-10">
               <div className="flex flex-col gap-2">
-                <h3 className="h3 flex items-center gap-3">{stat.value}</h3>
-                <p className="text-muted-foreground">{stat.description}</p>
+                <h3 className="h3 flex items-center gap-3 pt3">{stat.value}</h3>
+                <p className="text-muted-foreground pt-5">{stat.description}</p>
               </div>
             </AnimateOnView>
           ))}

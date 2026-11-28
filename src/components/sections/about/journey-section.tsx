@@ -9,7 +9,7 @@ const journeyTabs = [
   {
     title: "Understand Your Vision",
     description:
-      "Every great solution starts with listening. We take the time to understand your business, your challenges, and your goals to create a digital strategy that truly fits your vision.",
+      "Listening is always the first step to great solutions. We take time to understand your business, your challenges and your goals so we can develop a digital strategy that really fits your vision.",
     year: "01",
     subtitle: "Understanding",
     image:
@@ -18,7 +18,7 @@ const journeyTabs = [
   {
     title: "Design With Purpose",
     description:
-      "We believe great design goes beyond appearance. We create intuitive, engaging, and user-focused experiences that connect your brand with the people who matter most.",
+      "We believe that great design is more than just looks. We design intuitive, engaging and user centric experiences that connect your brand to the people that matter most.",
     year: "02",
     subtitle: "Creativity",
     image:
@@ -27,7 +27,7 @@ const journeyTabs = [
   {
     title: "Build With Innovation",
     description:
-      "We turn ideas into reality through modern technologies and thoughtful development, building reliable, scalable, and high-performing digital solutions.",
+      "We use the latest technologies and thoughtful development to bring ideas to life, creating reliable, scalable and high-performing digital solutions. Our commitment goes beyond launch.",
     year: "03",
     subtitle: "Innovation",
     image:
@@ -36,7 +36,7 @@ const journeyTabs = [
   {
     title: "Grow Together",
     description:
-      "Our commitment doesn't end at launch. We believe in building lasting partnerships, helping businesses adapt, evolve, and unlock new opportunities through technology.",
+      "We believe in building lasting partnerships, helping businesses adapt, evolve and unlock new opportunities through technology.",
     year: "04",
     subtitle: "Growth",
     image:
@@ -74,31 +74,44 @@ const JourneySection = () => {
         </StaggerContainer>
 
         {/* Mission Journey */}
-        <div className="relative bg-card md:rounded-[40px] rounded-lg border border-border p-6 md:p-12 overflow-hidden">
+        <div className="relative mx-auto md:max-w-[85%] bg-card md:rounded-[40px] rounded-lg border border-border p-6 md:p-12 overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-12 gap-8 items-center">
-            {/* Left Content */}
-            <div className="flex flex-col h-full justify-between py-4">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeTab}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 20 }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                  }}
-                  className="space-y-3">
-                  <h3 className="h4">{journeyTabs[activeTab].title}</h3>
+            {/* Left Content: grouped and vertically centered, no big empty gap */}
+            <div className="flex flex-col h-full justify-center md:gap-10 gap-8 py-4">
+              {/*
+                All four texts sit in the same grid cell, so the block is always as tall
+                as the longest text. Nothing below it jumps when the tab changes.
+              */}
+              <div className="grid">
+                {journeyTabs.map((tab, index) => {
+                  const isActive = activeTab === index;
 
-                  <p className="text-muted-foreground text-body-md leading-relaxed max-w-md">
-                    {journeyTabs[activeTab].description}
-                  </p>
-                </motion.div>
-              </AnimatePresence>
+                  return (
+                    <motion.div
+                      key={tab.title}
+                      aria-hidden={!isActive}
+                      initial={false}
+                      animate={{
+                        opacity: isActive ? 1 : 0,
+                        x: isActive ? 0 : -20,
+                      }}
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
+                      className={cn(
+                        "col-start-1 row-start-1 space-y-3",
+                        !isActive && "pointer-events-none",
+                      )}>
+                      <h3 className="h4">{tab.title}</h3>
+
+                      <p className="text-muted-foreground text-body-md leading-relaxed max-w-md">
+                        {tab.description}
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
 
               {/* Progress and Step */}
-              <div className="md:mt-12 mt-8 flex flex-col-reverse md:flex-col md:gap-8 gap-2">
+              <div className="flex flex-col-reverse md:flex-col md:gap-8 gap-2">
                 {/* Dots Pagination */}
                 <div className="flex gap-3 p-2 bg-white/5 w-fit rounded-full border border-white/10">
                   {journeyTabs.map((_, index) => (

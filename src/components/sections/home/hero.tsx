@@ -17,8 +17,7 @@ const Hero = () => {
         pb-0
         bg-[url('/images/home/hero-bg.webp')]
         bg-cover bg-center bg-no-repeat
-      "
-    >
+      ">
       {/* Warm charcoal overlay */}
       <div className="absolute inset-0 bg-[#171412]/45 pointer-events-none" />
 

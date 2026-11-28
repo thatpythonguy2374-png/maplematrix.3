@@ -1,6 +1,12 @@
 import { supabase } from "@/integrations/supabase/client";
 import { User } from "@supabase/supabase-js";
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
 
 interface Profile {
   id: string;
@@ -13,11 +19,20 @@ interface AuthContextType {
   user: User | null;
   profile: Profile | null;
   loading: boolean;
-  signUp: (email: string, password: string, fullName: string) => Promise<{ error: Error | null }>;
+  signUp: (
+    email: string,
+    password: string,
+    fullName: string,
+  ) => Promise<{ error: Error | null }>;
   signIn: (email: string, password: string) => Promise<{ error: Error | null }>;
   signOut: () => Promise<void>;
-  updateProfile: (data: { full_name?: string; avatar_url?: string }) => Promise<{ error: Error | null }>;
-  uploadAvatar: (file: File) => Promise<{ url: string | null; error: Error | null }>;
+  updateProfile: (data: {
+    full_name?: string;
+    avatar_url?: string;
+  }) => Promise<{ error: Error | null }>;
+  uploadAvatar: (
+    file: File,
+  ) => Promise<{ url: string | null; error: Error | null }>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -43,23 +58,23 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     // Set up auth state listener FIRST
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (event, session) => {
-        setUser(session?.user ?? null);
-        
-        if (session?.user) {
-          // Use setTimeout to avoid potential race conditions
-          setTimeout(async () => {
-            const profileData = await fetchProfile(session.user.id);
-            setProfile(profileData);
-          }, 0);
-        } else {
-          setProfile(null);
-        }
-        
-        setLoading(false);
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(async (event, session) => {
+      setUser(session?.user ?? null);
+
+      if (session?.user) {
+        // Use setTimeout to avoid potential race conditions
+        setTimeout(async () => {
+          const profileData = await fetchProfile(session.user.id);
+          setProfile(profileData);
+        }, 0);
+      } else {
+        setProfile(null);
       }
-    );
+
+      setLoading(false);
+    });
 
     // THEN check for existing session
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -93,7 +108,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         .from("profiles")
         .upsert(
           { user_id: data.user.id, full_name: fullName },
-          { onConflict: "user_id" }
+          { onConflict: "user_id" },
         );
       if (upsertError) {
         console.error("Error upserting profile after signup:", upsertError);
@@ -120,7 +135,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setProfile(null);
   };
 
-  const updateProfile = async (data: { full_name?: string; avatar_url?: string }) => {
+  const updateProfile = async (data: {
+    full_name?: string;
+    avatar_url?: string;
+  }) => {
     if (!user) return { error: new Error("Not authenticated") };
 
     const { error } = await supabase
@@ -129,7 +147,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       .eq("user_id", user.id);
 
     if (!error) {
-      setProfile((prev) => prev ? { ...prev, ...data } : null);
+      setProfile((prev) => (prev ? { ...prev, ...data } : null));
     }
 
     return { error: error as Error | null };
@@ -150,9 +168,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       return { url: null, error: uploadError as Error };
     }
 
-    const { data: { publicUrl } } = supabase.storage
-      .from("blog-images")
-      .getPublicUrl(filePath);
+    const {
+      data: { publicUrl },
+    } = supabase.storage.from("blog-images").getPublicUrl(filePath);
 
     return { url: publicUrl, error: null };
   };
@@ -168,8 +186,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         signOut,
         updateProfile,
         uploadAvatar,
-      }}
-    >
+      }}>
       {children}
     </AuthContext.Provider>
   );

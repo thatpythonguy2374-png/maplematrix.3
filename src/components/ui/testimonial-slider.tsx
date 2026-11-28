@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
     quote:
       "We begin with an understanding of your business, audience, goals and requirements to find the right direction for your project.",
 
-    image: "/images/home/testimonial-1.webp",
+    image: "/images/home/discover.webp",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     quote:
       "We build clear structures and intuitive designs that relect your brand and offer a seamless user experience.",
 
-    image: "/images/home/testimonial-2.webp",
+    image: "/images/home/design.webp",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const testimonials: Testimonial[] = [
     quote:
       "Based on the approved designs, our team builds high performance and responsive websites using the riht technologies.",
 
-    image: "/images/home/testimonial-3.webp",
+    image: "/images/home/develop.webp",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const testimonials: Testimonial[] = [
     quote:
       "We check all the important aspects, user experience and make sure that everything works properly.",
 
-    image: "/images/home/testimonial-4.webp",
+    image: "/images/home/test.webp",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const testimonials: Testimonial[] = [
     quote:
       "We launch your website and provide ongoing support to help you grow your digital presence.",
 
-    image: "/images/home/testimonial-4.webp",
+    image: "/images/home/support.jpg",
   },
 ];
 
@@ -81,8 +81,7 @@ const TestimonialSlider = () => {
             initial={{ opacity: 0, x: direction > 0 ? 100 : -100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: direction > 0 ? -100 : 100 }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-          >
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}>
             <div className="relative md:w-80 md:h-80 h-64 w-64 flex-shrink-0 overflow-hidden rounded-2xl">
               <img
                 src={
@@ -122,8 +121,7 @@ const TestimonialSlider = () => {
                     damping: 30,
                     stiffness: 250,
                     delay: i * 0.05, // Staggered transition for overlapping effect
-                  }}
-                >
+                  }}>
                   <img
                     src={
                       testimonials[index].image ||
@@ -145,15 +143,13 @@ const TestimonialSlider = () => {
           <button
             onClick={prev}
             className="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-zinc-800 transition-colors group"
-            aria-label="Previous testimonial"
-          >
+            aria-label="Previous testimonial">
             <ChevronLeft className="w-6 h-6 text-zinc-400 group-hover:text-white transition-colors" />
           </button>
           <button
             onClick={next}
             className="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-zinc-800 transition-colors group"
-            aria-label="Next testimonial"
-          >
+            aria-label="Next testimonial">
             <ChevronRight className="w-6 h-6 text-zinc-400 group-hover:text-white transition-colors" />
           </button>
         </div>
